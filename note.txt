@@ -1,0 +1,2 @@
+- cài thêm thunder client để test api
+- import file json trong folder apiRequest vào thunder client để sd

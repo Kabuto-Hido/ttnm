@@ -1,0 +1,1469 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TTNM",
+    "dateExported": "2023-05-06T03:55:04.911Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "01a04fd7-17db-4bdc-9764-a2eb7e523b92",
+            "name": "CUSTOMER",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.246Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "85febb3f-9c48-495d-92c1-ac374803c795",
+            "name": "ACCOUNT",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.247Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "22cdfde0-dd78-458e-a8c5-0975a19e10ec",
+            "name": "AUTH",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.248Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "56fa026c-8910-4d37-8240-eb0dbdefd1b5",
+            "name": "CATEGORY",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.249Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "PRODUCT",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.250Z",
+            "sortNum": 60000
+        },
+        {
+            "_id": "85721f1b-7b01-4a71-bd62-1b920c9c82bb",
+            "name": "TYPE",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.252Z",
+            "sortNum": 80000
+        },
+        {
+            "_id": "f2e41958-7e54-4035-923d-6509a03fa414",
+            "name": "CART",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.253Z",
+            "sortNum": 90000
+        },
+        {
+            "_id": "4273536b-e0ac-4e81-9c0e-14ad8f15c34c",
+            "name": "EMPLOYEE",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.254Z",
+            "sortNum": 100000
+        },
+        {
+            "_id": "2f3d8fb2-aa75-4b79-845e-8697898fca7f",
+            "name": "MENU",
+            "containerId": "",
+            "created": "2023-04-22T06:20:28.255Z",
+            "sortNum": 110000
+        },
+        {
+            "_id": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "ORDER",
+            "containerId": "",
+            "created": "2023-04-22T06:07:11.171Z",
+            "sortNum": 120000
+        },
+        {
+            "_id": "66f2f940-73e8-4230-b7fd-355bf4f3ad41",
+            "name": "BOOKING",
+            "containerId": "",
+            "created": "2023-04-09T16:46:26.717Z",
+            "sortNum": 130000
+        },
+        {
+            "_id": "4bd97d1a-486e-439c-a3c2-8f4abbd6f961",
+            "name": "ARTICLE",
+            "containerId": "",
+            "created": "2023-04-06T15:08:41.352Z",
+            "sortNum": 140000
+        },
+        {
+            "_id": "0102e378-940e-4fdb-b082-f7713389f082",
+            "name": "ARTICLE-CATEGORY",
+            "containerId": "",
+            "created": "2023-04-02T15:07:57.435Z",
+            "sortNum": 150000
+        },
+        {
+            "_id": "59981484-c561-4f39-aedd-6370423178de",
+            "name": "DISCOUNT",
+            "containerId": "",
+            "created": "2023-04-02T15:02:40.407Z",
+            "sortNum": 160000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3e0679f1-d1b6-422f-978f-49ada1d121d9",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "22cdfde0-dd78-458e-a8c5-0975a19e10ec",
+            "name": "LOGIN",
+            "url": "localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-22T06:20:28.246Z",
+            "modified": "2023-05-06T03:22:47.904Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user1@gmail.com\",\n  \"password\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b6bc4c49-cf01-43d8-a3c3-19f93e600959",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "22cdfde0-dd78-458e-a8c5-0975a19e10ec",
+            "name": "SEND OTP BY EMAIL",
+            "url": "localhost:5000/api/auth/sendmailotp",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-04-22T06:20:28.247Z",
+            "modified": "2023-04-22T06:20:28.247Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ngoanh91thangnhat@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7cdff42d-7335-4747-80f5-e06f4c518503",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "22cdfde0-dd78-458e-a8c5-0975a19e10ec",
+            "name": "FORGOT PASS",
+            "url": "localhost:5000/api/auth/forgotpassword?id=641bfb546085390dd937e655",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2023-04-22T06:20:28.248Z",
+            "modified": "2023-04-22T06:20:28.248Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "641bfb546085390dd937e655",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"otp\": \"741345\",\n  \"newPassword\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b9ff63d0-8ffe-4db7-8b21-ffece8e40c55",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "22cdfde0-dd78-458e-a8c5-0975a19e10ec",
+            "name": "REGISTER",
+            "url": "http://localhost:5000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-22T06:20:28.249Z",
+            "modified": "2023-04-22T06:20:28.249Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user2\",\n  \"password\": \"1234567\",\n  \"reEnterPassword\":\"1234567\",\n  \"dateOfBirth\": \"19/01/2001\",\n  \"address\":\"so 3 HHT\",\n  \"sex\":\"Men\",\n  \"phone\": \"0131123128\",\n  \"fullname\": \"Hung\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f1d7a4ed-f4b9-4c78-b5b1-07d0aa5a0fd2",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "01a04fd7-17db-4bdc-9764-a2eb7e523b92",
+            "name": "CHANGE PROFILE",
+            "url": "localhost:5000/api/customer/changeProfile/641abce11b231ddee1924263",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-04-22T06:20:28.250Z",
+            "modified": "2023-04-22T06:20:28.250Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2Nzk1NTA0NzYsImV4cCI6MTY3OTgwOTY3Nn0.75ilJhm0UAQoLc8oIjs3bVmrCpReyY1ESplxWtTQR2c"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "address",
+                        "value": "Trường sư phạm kỹ thuật TPHCM"
+                    },
+                    {
+                        "name": "email",
+                        "value": "tuananh@gmail.com"
+                    },
+                    {
+                        "name": "fullname",
+                        "value": "Tuan Anh"
+                    },
+                    {
+                        "name": "sex",
+                        "value": "Men"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "0123456789"
+                    },
+                    {
+                        "name": "dateOfBirth",
+                        "value": "12/01/2000"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "avatar",
+                        "value": "c:\\Users\\KBT\\OneDrive\\Pictures\\hamburger.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0094fcdf-d6e3-4668-8c2c-6940e992ba93",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "01a04fd7-17db-4bdc-9764-a2eb7e523b92",
+            "name": "GET ALL - ADMIN",
+            "url": "localhost:5000/api/customer/get-all",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-04-22T06:20:28.251Z",
+            "modified": "2023-04-22T06:20:28.251Z",
+            "headers": [
+                {
+                    "name": "Connection",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2Nzk0NzQzMDEsImV4cCI6MTY3OTczMzUwMX0.jQHoljalxABEIFYbiUy7I7I38ntzz-EZ2UQ6ehofnCw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "06365ac1-96b7-4572-b7db-e57f19bce095",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "85febb3f-9c48-495d-92c1-ac374803c795",
+            "name": "CHANGE STATUS - ADMIN",
+            "url": "localhost:5000/api/account/changeStatus/641abce11b231ddee1924261",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-04-22T06:20:28.252Z",
+            "modified": "2023-04-22T06:20:28.252Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2Nzk1NTE2MDIsImV4cCI6MTY3OTgxMDgwMn0.7xxnbvIqOUEPL6xekn-Q8TZ9liB1Xuh4tW0B4o442bE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e74de280-79ef-494f-92e9-64c946b972c4",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "22cdfde0-dd78-458e-a8c5-0975a19e10ec",
+            "name": "LOGIN - ADMIN",
+            "url": "localhost:5000/api/auth/admin",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-04-22T06:20:28.253Z",
+            "modified": "2023-04-22T06:20:28.253Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8061982f-5133-40c7-9b26-6a59a0a86db1",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "01a04fd7-17db-4bdc-9764-a2eb7e523b92",
+            "name": "GET CUSTOMER BY ID",
+            "url": "localhost:5000/api/customer/information/641abce11b231ddee1924263",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-04-22T06:20:28.254Z",
+            "modified": "2023-04-22T06:20:28.254Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjc5NTU1NDQxLCJleHAiOjE2Nzk4MTQ2NDF9.Hx7qPm0ypWRdEjBlgJbGC43ZSTZTIIVRjS-6GSett20"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c533c7c8-4cba-4b33-ab72-a924d4e3af99",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "85febb3f-9c48-495d-92c1-ac374803c795",
+            "name": "GET ALL - ADMIN",
+            "url": "localhost:5000/api/account/get-all",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-04-22T06:20:28.255Z",
+            "modified": "2023-05-06T03:22:09.383Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgzMzQyNDAyLCJleHAiOjE2ODM2MDE2MDJ9.YFSJn7YCKo35z6UVqkd8MyubyPiHgf1ip-exTW0-x1s"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "888e417a-801e-42d1-95d7-fe52956c6ab1",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "56fa026c-8910-4d37-8240-eb0dbdefd1b5",
+            "name": "CREATE NEW - ADMIN",
+            "url": "localhost:5000/api/category/createNew",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-04-22T06:20:28.257Z",
+            "modified": "2023-04-22T06:20:28.257Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjc5NzIyNjcwLCJleHAiOjE2Nzk5ODE4NzB9.67NOM0qwcBv62jI5FFbwepaFKlxpUNPbLbWYU9n0MBc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" :\"Kitchen Utensils\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0dad5071-2f7b-4f19-9a47-c4425cf41cb5",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "56fa026c-8910-4d37-8240-eb0dbdefd1b5",
+            "name": "GET ALL",
+            "url": "localhost:5000/api/category/get-all",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-04-22T06:20:28.258Z",
+            "modified": "2023-04-22T06:20:28.258Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "87ef19a5-84e2-438d-86b3-e5d6a0ebc561",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "59981484-c561-4f39-aedd-6370423178de",
+            "name": "Get All",
+            "url": "localhost:5000/api/discount/getAll",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-04-02T15:03:07.417Z",
+            "modified": "2023-04-02T15:06:25.896Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f97b72fa-d119-4f35-bd02-4f41b2f22474",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "59981484-c561-4f39-aedd-6370423178de",
+            "name": "create",
+            "url": "http://localhost:5000/api/discount/create",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-03-26T05:12:33.731Z",
+            "modified": "2023-04-02T15:34:44.431Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjc5ODExNDAyLCJleHAiOjE2ODAwNzA2MDJ9.6ScqpxyHBDoWp7YCmUi6fPIx5zJEaPmnsTRJesAf-Mw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"TEST\",\n  \"discount\": 10000,\n  \"expireDate\": \"12/09/2023\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "07220c71-cc83-40fb-a796-eee63b576fe1",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "0102e378-940e-4fdb-b082-f7713389f082",
+            "name": "create",
+            "url": "localhost:5000/api/articleCategory/create",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-04-02T15:08:07.172Z",
+            "modified": "2023-04-06T15:54:26.617Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNzkzNjk5LCJleHAiOjE2ODEwNTI4OTl9.q5jD8HgLxmePnNJYb_uyE3SZAt1zE7-YOu0c4C05VgY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Cocktail\",\n  \"description\": \"Tất cả bài viết về Cocktail\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d13f3af5-3204-414d-8c39-3fbd89e5c846",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4bd97d1a-486e-439c-a3c2-8f4abbd6f961",
+            "name": "create",
+            "url": "localhost:5000/api/article/create",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-04-06T15:08:41.352Z",
+            "modified": "2023-04-06T15:54:56.080Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNzkzNjk5LCJleHAiOjE2ODEwNTI4OTl9.q5jD8HgLxmePnNJYb_uyE3SZAt1zE7-YOu0c4C05VgY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Tìm Hiểu Lịch Sử Cocktail Và Các Loại Cocktail Phổ Biến Hiện Nay\",\n  \"image\": \"https://cdn.tgdd.vn/2020/07/CookProduct/commercial0040-1200x676.jpg\",\n  \"description\": \"Tất cả bài viết về CD\",\n  \"articleCateId\": \"642eeb3219d4e2b0151b91b4\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "41bc9e7e-1390-43e8-9280-0713cc2ab8a8",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "66f2f940-73e8-4230-b7fd-355bf4f3ad41",
+            "name": "create",
+            "url": "localhost:5000/api/booking/user-booking",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-04-09T16:46:26.717Z",
+            "modified": "2023-04-18T15:55:12.729Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODE4MzA5MDQsImV4cCI6MTY4MjA5MDEwNH0.h2vAnFkxUGxHi-x6DRrbwL1vx1Vc8vEn5e6tSqKBqXY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookingDate\": \"20/10/2023\",\n  \"time\": \"20:00\",\n  \"amount_of_people\": 2,\n  \"note\": \"Hẹn hò ăn uống\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b6500b2-352c-4dba-afd6-79bc3507daca",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "create order",
+            "url": "localhost:5000/api/order/create",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-04-22T06:07:11.171Z",
+            "modified": "2023-05-05T16:59:28.057Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODMzMDIwNjQsImV4cCI6MTY4MzU2MTI2NH0.WBmIBFXZITtdojvmyUK6hoUGNUD2a0CgpT5Q8zZXttc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"discountCode\": \"TEST2\",\n  \"address\": \"ĐH SPKT\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ac9baad-74f7-4a99-97a8-0b977e3e9ec8",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "56fa026c-8910-4d37-8240-eb0dbdefd1b5",
+            "name": "UPDATE - ADMIN",
+            "url": "localhost:5000/api/category/641e88c5cfaf55a6cf8c1966",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-04-22T06:20:28.259Z",
+            "modified": "2023-04-22T06:20:28.259Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjc5NzIyNjcwLCJleHAiOjE2Nzk5ODE4NzB9.67NOM0qwcBv62jI5FFbwepaFKlxpUNPbLbWYU9n0MBc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Music Disc\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7ee30c93-7a45-4818-9eeb-5f96458a99ce",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "0102e378-940e-4fdb-b082-f7713389f082",
+            "name": "edit",
+            "url": "localhost:5000/api/articleCategory/edit/64299b23c004d322b76b9271",
+            "method": "PUT",
+            "sortNum": 145000,
+            "created": "2023-04-05T13:11:13.159Z",
+            "modified": "2023-04-05T13:59:39.996Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNzAwOTM4LCJleHAiOjE2ODA5NjAxMzh9.dov23W5vodIhEkDEUw9ZHnZCOsgQivhGJOH5cvRqMns"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rượu\",\n  \"description\": \"Tất cả bài viết về rượu ok\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "178304c5-b95d-4e19-ad1d-e609dad3f03d",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4bd97d1a-486e-439c-a3c2-8f4abbd6f961",
+            "name": "edit",
+            "url": "localhost:5000/api/article/edit/642eeb4f19d4e2b0151b91b6",
+            "method": "PUT",
+            "sortNum": 145000,
+            "created": "2023-04-06T15:08:41.353Z",
+            "modified": "2023-04-06T16:12:39.038Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNzkzNjk5LCJleHAiOjE2ODEwNTI4OTl9.q5jD8HgLxmePnNJYb_uyE3SZAt1zE7-YOu0c4C05VgY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Tìm Hiểu Lịch Sử Cocktail Và Các Loại Cocktail Phổ Biến Hiện Nay\",\n  \"image\": \"https://cdn.tgdd.vn/2020/07/CookProduct/commercial0040-1200x676.jpg\",\n  \"description\": \"Ngày nay, cocktail đã trở thành thức uống phổ biến và là phần không thể thiếu trong thế giới ẩm thực khắp năm châu. Vậy, cocktail có từ khi nào và vì sao cocktail trở thành thức uống được yêu thích đến thế? Bài viết sau, các bạn hãy cùng Chefjob tìm hiểu về cocktail để bạn hiểu hơn về loại thức uống đã đi vào huyền thoại ngành Pha chế. \\n Cocktail(long drink) là một loại thức uống được pha trộn, chứa rượu. Một ly cocktail thường bao gồm rượu và hương như là các loại rượu mùi, trái cây, mật ong, sữa hay kem cùng các loại phụ gia khác. \\n Theo tờ báo Balance của Mỹ, vào năm 1806, cocktail được định nghĩa là một loại thức uống được pha chế từ rượu mạnh các loại, đường, nước, “rượu đắng – bitters” và định nghĩa này được sử dụng xuyên suốt thế kỉ 19. Đến thế kỉ 20, cocktail được biến hóa khác đi so với ban đầu. Gần 200 năm sau, ngày 13/05/1806 được lấy làm ngày kỷ niệm cocktail xuất hiện trên báo viết. \\n Về cái tên cocktail, nếu dịch đúng tiếng Anh thì cocktail có nghĩa là đuôi con gà trống. Theo đó, vào thời lập quốc của Mỹ, chọi gà là một trong những trò chơi rất phổ biến. Người chủ gà chiến thắng sẽ nhận được lông đuôi của con gà thua cuộc và được đãi một chầu rượu sau khi được chúc “on the cock’tail”. Sau đó, người ta sử dụng tên này để dùng cho loại thức uống pha trộn từ nhiều loại nguyên liệu (tức cocktail) vì màu sắc của nó cũng sặc sỡ, màu mè như đuôi gà trống.\",\n  \"articleCateId\": \"642eeb3219d4e2b0151b91b4\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ce9694a-51c5-4242-a80e-e272f5aa634e",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "66f2f940-73e8-4230-b7fd-355bf4f3ad41",
+            "name": "edit",
+            "url": "localhost:5000/api/booking/edit/643ebd6076a94265c94ca5b2",
+            "method": "PUT",
+            "sortNum": 145000,
+            "created": "2023-04-09T16:46:26.718Z",
+            "modified": "2023-04-18T16:40:53.977Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODE4MzQ1OTIsImV4cCI6MTY4MjA5Mzc5Mn0.Z8vFh1SK6Lepp-cFSCoyhXyCeJ_hYhTBEqvLWO2OUow"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookingDate\": \"20/10/2023\",\n  \"time\": \"20:00\",\n  \"amount_of_people\": 3,\n  \"note\": \"Hẹn hò ăn uống\",\n  \"status\": \"SUCCESS\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c2115be6-33e9-40ff-aa7e-697a4a864ca1",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "edit",
+            "url": "localhost:5000/api/booking/edit/643ebd6076a94265c94ca5b2",
+            "method": "PUT",
+            "sortNum": 145000,
+            "created": "2023-04-22T06:07:11.172Z",
+            "modified": "2023-04-22T06:07:11.171Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODE4MzQ1OTIsImV4cCI6MTY4MjA5Mzc5Mn0.Z8vFh1SK6Lepp-cFSCoyhXyCeJ_hYhTBEqvLWO2OUow"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookingDate\": \"20/10/2023\",\n  \"time\": \"20:00\",\n  \"amount_of_people\": 3,\n  \"note\": \"Hẹn hò ăn uống\",\n  \"status\": \"SUCCESS\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a06dc885-eba5-4347-9f24-a47a7a442e20",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "59981484-c561-4f39-aedd-6370423178de",
+            "name": "edit discount",
+            "url": "http://localhost:5000/api/discount/edit/641fe3561ebbfd8f19af33cc",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2023-03-26T14:55:26.297Z",
+            "modified": "2023-04-05T13:53:51.932Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNzAyODA2LCJleHAiOjE2ODA5NjIwMDZ9.PHHaiIO98rkHvVL_CHeaUZv5LjHPhNBLRGpVhEcV-5k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"TEST2\",\n  \"discount\": 15000,\n  \"expireDate\": \"12/09/2023\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89a12ea0-5371-4193-9f72-7bfa27fdcd0f",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "0102e378-940e-4fdb-b082-f7713389f082",
+            "name": "get All",
+            "url": "localhost:5000/api/articleCategory/getAll",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-04-02T15:17:18.872Z",
+            "modified": "2023-04-02T15:17:32.536Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ba90acd8-9bae-45f0-957e-11292a0b16f2",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4bd97d1a-486e-439c-a3c2-8f4abbd6f961",
+            "name": "get All",
+            "url": "localhost:5000/api/article/getAll",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-04-06T15:08:41.354Z",
+            "modified": "2023-04-06T15:28:48.061Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "426469c7-b57b-462a-9c74-80f694d89020",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "66f2f940-73e8-4230-b7fd-355bf4f3ad41",
+            "name": "get All",
+            "url": "localhost:5000/api/booking/getAll",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-04-09T16:46:26.719Z",
+            "modified": "2023-04-18T15:45:18.621Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxODI4ODI4LCJleHAiOjE2ODIwODgwMjh9.-S_u0OFP7dttRE6lN1z45OBvUpXVNp3JeMSJV4vAK6c"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\": \"WAITING\",\n  \"phone\": \"0123456789\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7645efff-7545-4d25-b062-b3ca3e377f46",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "get All",
+            "url": "localhost:5000/api/order/getAll",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-04-22T06:07:11.173Z",
+            "modified": "2023-05-06T03:07:05.491Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgzMzQyNDAyLCJleHAiOjE2ODM2MDE2MDJ9.YFSJn7YCKo35z6UVqkd8MyubyPiHgf1ip-exTW0-x1s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\": \"WAITING\",\n  \"phone\": \"0123456789\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b77a841-09c6-4fc3-874e-fb37968d914a",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "56fa026c-8910-4d37-8240-eb0dbdefd1b5",
+            "name": "GET BY ID",
+            "url": "localhost:5000/api/category/641e88c5cfaf55a6cf8c1966",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-04-22T06:20:28.260Z",
+            "modified": "2023-04-22T06:20:28.260Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f0c9932b-8872-4eaa-bf11-7935c5851df1",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "get All by user",
+            "url": "localhost:5000/api/order/getAllByUser",
+            "method": "GET",
+            "sortNum": 155000,
+            "created": "2023-05-06T03:18:36.277Z",
+            "modified": "2023-05-06T03:20:52.907Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODMzNDI3MDEsImV4cCI6MTY4MzYwMTkwMX0.69sbCgYoskighPJLjaqwonzfcwrDHGeKSH9VctsPp_0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c38bbbd8-0ffe-4e50-b5ef-cb7e18fd82db",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "59981484-c561-4f39-aedd-6370423178de",
+            "name": "get by id",
+            "url": "http://localhost:5000/api/discount/641fe3561ebbfd8f19af33cc",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-03-26T06:58:58.945Z",
+            "modified": "2023-04-02T15:35:11.897Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjc5ODExNDAyLCJleHAiOjE2ODAwNzA2MDJ9.6ScqpxyHBDoWp7YCmUi6fPIx5zJEaPmnsTRJesAf-Mw",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"code\": \"TEST\",\n  \"discount\": 10000,\n  \"expireDate\": \"12/09/2023\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d8b9b277-6b0f-4152-b0a0-13f4c6936ced",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "0102e378-940e-4fdb-b082-f7713389f082",
+            "name": "get by id",
+            "url": "localhost:5000/api/articleCategory/64299b23c004d322b76b9271",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-04-05T13:06:01.533Z",
+            "modified": "2023-04-05T13:06:08.231Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "271bb474-e083-4d40-997e-e6635d399245",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4bd97d1a-486e-439c-a3c2-8f4abbd6f961",
+            "name": "get by id",
+            "url": "localhost:5000/api/article/642eeb4f19d4e2b0151b91b6",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-04-06T15:08:41.355Z",
+            "modified": "2023-04-06T16:16:38.800Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "21b43757-8acf-4e72-b0ae-ec23e5fb1355",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "66f2f940-73e8-4230-b7fd-355bf4f3ad41",
+            "name": "get by id",
+            "url": "localhost:5000/api/booking/643ebd6076a94265c94ca5b2",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-04-09T16:46:26.720Z",
+            "modified": "2023-04-18T16:16:43.083Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODE4MzQ1OTIsImV4cCI6MTY4MjA5Mzc5Mn0.Z8vFh1SK6Lepp-cFSCoyhXyCeJ_hYhTBEqvLWO2OUow"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6332581c-94fc-45c6-b308-1dccc1bfa837",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "order details",
+            "url": "localhost:5000/api/order/6455c5dfd68e8257b68757f3",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-04-22T06:07:11.174Z",
+            "modified": "2023-05-06T03:31:48.595Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODMzNDI3MDEsImV4cCI6MTY4MzYwMTkwMX0.69sbCgYoskighPJLjaqwonzfcwrDHGeKSH9VctsPp_0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b2931e7e-2442-4552-862f-a6732aab19b5",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "CREATE NEW - ADMIN",
+            "url": "localhost:5000/api/product/createNew",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-04-22T06:20:28.261Z",
+            "modified": "2023-04-22T06:25:08.863Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgyMTQ0NjkwLCJleHAiOjE2ODI0MDM4OTB9.N4QCIS9Let32-CZ8LevJmrQ7Yv_DycrCYK6JQI_erns"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Rượu Jagermeister\",\n  \"image\":\"https://oldworldwine.vn/upload/Jagermeister_-04-09-2020-12-38-08.png\",\n  \"description\": \"Top Picks\",\n  \"categoryId\": \"641e88c5cfaf55a6cf8c1966\",\n  \"types\":[\n    {\n      \"name\":\"type1Product2\",\n      \"in_stock\": 10,\n      \"price\": 290000\n    },\n    {\n      \"name\":\"type2Product1\",\n      \"in_stock\": 10,\n      \"price\": 290000\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e1246891-ba18-4d22-9bb7-72a0504c7193",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "GET ALL",
+            "url": "localhost:5000/api/product/get-all?page=1&limit=6",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-04-22T06:20:28.262Z",
+            "modified": "2023-04-22T06:20:28.262Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "6",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "216d7d70-0845-433c-9ca8-4e96128289d3",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "eb56a518-555d-40c5-ab8d-833677c6aabb",
+            "name": "update status order",
+            "url": "localhost:5000/api/order/updateStatus/6455c5dfd68e8257b68757f3",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2023-05-06T03:53:55.158Z",
+            "modified": "2023-05-06T03:54:53.427Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgzMzQyNDAyLCJleHAiOjE2ODM2MDE2MDJ9.YFSJn7YCKo35z6UVqkd8MyubyPiHgf1ip-exTW0-x1s"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "acd4e74a-6669-4cb5-a73a-5fad15228cb1",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "GET BY ID",
+            "url": "localhost:5000/api/product/642845c9105dd53302671fd0",
+            "method": "GET",
+            "sortNum": 185000,
+            "created": "2023-04-22T06:20:28.264Z",
+            "modified": "2023-04-22T06:20:28.264Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ae5befe6-4405-4eba-9985-f75e2827e203",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "GET BY CATEGORY ID",
+            "url": "localhost:5000/api/product?categoryId=641e88c5cfaf55a6cf8c1966",
+            "method": "GET",
+            "sortNum": 192500,
+            "created": "2023-04-22T06:20:28.266Z",
+            "modified": "2023-04-22T06:20:28.266Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "categoryId",
+                    "value": "641e88c5cfaf55a6cf8c1966",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ebf0c956-572b-4302-a5b1-0936474c6cda",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "EDIT - ADMIN",
+            "url": "localhost:5000/api/product/6433c934320a3de16283f2a8",
+            "method": "PUT",
+            "sortNum": 200000,
+            "created": "2023-04-22T06:20:28.267Z",
+            "modified": "2023-04-22T06:20:28.267Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxMTExODA3LCJleHAiOjE2ODEzNzEwMDd9.JDF0CSAt4drik_JYoWtwTINbFRacyR9-Jt-4ATprQ-I"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"product1\",\n  \"image\":\"https://th.bing.com/th/id/R.a74e4f1154b754f9ba9d5973951c214a?rik=ESY2FoCJGVWrnQ&pid=ImgRaw&r=0\",\n  \"description\": \"Top Picks\",\n  \"categoryId\": \"641e88c5cfaf55a6cf8c1966\",\n  \"types\":[\n    {\n      \"id\":\"6433c934320a3de16283f2aa\",\n      \"name\":\"type1Product1\",\n      \"in_stock\": 10,\n      \"price\": 12000\n    },\n    {\n      \"id\":\"6433c935320a3de16283f2ad\",\n      \"name\":\"type2Product1\",\n      \"in_stock\": 12,\n      \"price\": 13000\n    },\n    {\n      \"name\":\"type3Product1\",\n      \"in_stock\": 10,\n      \"price\": 14000\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a9dc97c4-8318-4135-beeb-16b5acefbd8f",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "REMOVE TYPE FROM PRODUCT - ADMIN",
+            "url": "localhost:5000/api/product/removeType/642845c9105dd53302671fd0",
+            "method": "PUT",
+            "sortNum": 210000,
+            "created": "2023-04-22T06:20:28.268Z",
+            "modified": "2023-04-22T06:20:28.268Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNTk4ODA5LCJleHAiOjE2ODA4NTgwMDl9.T53nAxdnHQbjJPu7umTk-rqJZSxBUqMag2h1BXaMa2M"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"typeId\":\n  [\n    \"642845c9105dd53302671fd3\",\n    \"642bff1bb05aaea8cb8ec455\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b3230d2e-5eef-423f-866f-ddeaf8ea1b56",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "ADD TYPE TO PRODUCT - ADMIN",
+            "url": "localhost:5000/api/product/addType/642845c9105dd53302671fd0",
+            "method": "PUT",
+            "sortNum": 220000,
+            "created": "2023-04-22T06:20:28.269Z",
+            "modified": "2023-04-22T06:20:28.269Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgwNTk4ODA5LCJleHAiOjE2ODA4NTgwMDl9.T53nAxdnHQbjJPu7umTk-rqJZSxBUqMag2h1BXaMa2M"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"typeId\":\n  [\n      \"642bff1bb05aaea8cb8ec455\",\n      \"642845c9105dd53302671fd3\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "315e40cc-c234-4ace-bd10-3495ba74ebe0",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "002d9e50-0d19-4863-9c4a-35f4bdf22d6f",
+            "name": "GET LIST RELATED PRODUCT",
+            "url": "localhost:5000/api/product/related/642845c9105dd53302671fd0",
+            "method": "GET",
+            "sortNum": 230000,
+            "created": "2023-04-22T06:20:28.270Z",
+            "modified": "2023-04-22T06:20:28.270Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "47d09df6-2531-48d3-a4b2-79ace748608a",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "85721f1b-7b01-4a71-bd62-1b920c9c82bb",
+            "name": "EDIT TYPE- ADMIN",
+            "url": "",
+            "method": "GET",
+            "sortNum": 240000,
+            "created": "2023-04-22T06:20:28.271Z",
+            "modified": "2023-04-22T06:20:28.271Z",
+            "headers": []
+        },
+        {
+            "_id": "07902e74-cf0a-4a25-bd4d-fe315a616c02",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "f2e41958-7e54-4035-923d-6509a03fa414",
+            "name": "ADD TO CART",
+            "url": "localhost:5000/api/cart/addtocart",
+            "method": "POST",
+            "sortNum": 250000,
+            "created": "2023-04-22T06:20:28.272Z",
+            "modified": "2023-05-06T03:23:28.399Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDI3ZGRlZDdhODRhOGMzMGZmMTRjNTciLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODMzNDMzNjcsImV4cCI6MTY4MzYwMjU2N30.KG5HlcELQFlVTzpFbUskr3e2sX3G23K4LXRsibnoMAI"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"typeId\": \"6433c934320a3de16283f2aa\",\n  \"quantity\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c5c87b07-6e97-4849-8f4d-b1e860847dac",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "f2e41958-7e54-4035-923d-6509a03fa414",
+            "name": "VIEW CART",
+            "url": "localhost:5000/api/cart/viewcart",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2023-04-22T06:20:28.273Z",
+            "modified": "2023-05-06T03:13:10.219Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODMzNDI3MDEsImV4cCI6MTY4MzYwMTkwMX0.69sbCgYoskighPJLjaqwonzfcwrDHGeKSH9VctsPp_0"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1a23ee93-648e-420d-b973-0437ddb8db84",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "f2e41958-7e54-4035-923d-6509a03fa414",
+            "name": "UPDATE QUANTITY",
+            "url": "localhost:5000/api/cart/update-quantity",
+            "method": "PUT",
+            "sortNum": 260000,
+            "created": "2023-04-22T06:20:28.274Z",
+            "modified": "2023-04-22T06:20:28.274Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODExMTc5MjgsImV4cCI6MTY4MTM3NzEyOH0.uGI3IjednQ4HNQ7iGEUnkujALI9B7-tMUM6ykXQZMkQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cartDetails\": [\n    {\n      \"quantity\": 1,\n      \"typeId\": \"6433c934320a3de16283f2aa\"\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f7328f5-d0fa-43a8-9e81-da4cb61c29da",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "f2e41958-7e54-4035-923d-6509a03fa414",
+            "name": "REMOVE ITEM",
+            "url": "localhost:5000/api/cart/removeitem",
+            "method": "PUT",
+            "sortNum": 270000,
+            "created": "2023-04-22T06:20:28.275Z",
+            "modified": "2023-04-22T06:20:28.275Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFhYmNlMTFiMjMxZGRlZTE5MjQyNjEiLCJhY2NvdW50Um9sZSI6IlVzZXIiLCJpYXQiOjE2ODEzMTEyMDIsImV4cCI6MTY4MTU3MDQwMn0.vXaqH-awR47Kq-ARrIXWT90Y2t2PFdBf2IZDuFf6vs4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\n  [\n    \"6433c934320a3de16283f2aa\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7fd237d0-df1d-4e77-9a3f-195a08103a7e",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4273536b-e0ac-4e81-9c0e-14ad8f15c34c",
+            "name": "GET ALL",
+            "url": "localhost:5000/api/employee/no-account/get",
+            "method": "GET",
+            "sortNum": 280000,
+            "created": "2023-04-22T06:20:28.276Z",
+            "modified": "2023-04-22T06:20:28.276Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4e0af8ec-1e79-4445-9fe1-d82bc85a88a0",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4273536b-e0ac-4e81-9c0e-14ad8f15c34c",
+            "name": "CREATE NEW",
+            "url": "localhost:5000/api/employee/createnew",
+            "method": "POST",
+            "sortNum": 290000,
+            "created": "2023-04-22T06:20:28.277Z",
+            "modified": "2023-04-22T06:20:28.277Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxNDYxMjczLCJleHAiOjE2ODE3MjA0NzN9.e4scfGGR2foC4LgRLu_lqWFNh0DFcjXDKq1f-b_42mM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullname\": \"Bùi Thu Hương\",\n  \"phone\": \"0968743261\",\n  \"email\": \"buithuhuong@gmail.com\",\n  \"sex\": \"Woman\",\n  \"dateOfBirth\": \"13/05/1990\",\n  \"address\":\"Quận 11, TP.HCM\",\n  \"position\": \"Waiter\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "490be4e5-1ec1-45e4-b187-4461b9801136",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4273536b-e0ac-4e81-9c0e-14ad8f15c34c",
+            "name": "CHANGE PROFILE",
+            "url": "localhost:5000/api/employee/changeProfile/643910d94d0f919ffc719a42",
+            "method": "PUT",
+            "sortNum": 300000,
+            "created": "2023-04-22T06:20:28.278Z",
+            "modified": "2023-04-22T06:20:28.278Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxNDYxMjczLCJleHAiOjE2ODE3MjA0NzN9.e4scfGGR2foC4LgRLu_lqWFNh0DFcjXDKq1f-b_42mM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "fullname",
+                        "value": "Hồ Văn Cư"
+                    },
+                    {
+                        "name": "sex",
+                        "value": "Men"
+                    },
+                    {
+                        "name": "email",
+                        "value": "hovancu@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "0968743263"
+                    },
+                    {
+                        "name": "address",
+                        "value": "Quận 12, TP.HCM"
+                    },
+                    {
+                        "name": "dateOfBirth",
+                        "value": "13/05/1990"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "avatar",
+                        "value": "d:\\Picture\\Funny\\53.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a3350a9e-8a4c-4c79-9085-384b908aac16",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "4273536b-e0ac-4e81-9c0e-14ad8f15c34c",
+            "name": "NEW ACCOUNT",
+            "url": "localhost:5000/api/employee/newAccount",
+            "method": "POST",
+            "sortNum": 310000,
+            "created": "2023-04-22T06:20:28.279Z",
+            "modified": "2023-04-22T06:20:28.279Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxNDYxMjczLCJleHAiOjE2ODE3MjA0NzN9.e4scfGGR2foC4LgRLu_lqWFNh0DFcjXDKq1f-b_42mM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"employee2\",\n  \"password\": \"1234567\",\n  \"reEnterPassword\":\"1234567\",\n  \"empId\": \"643910d94d0f919ffc719a42\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "53434438-3c47-4cf3-895a-2ea5c7cb86b9",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "2f3d8fb2-aa75-4b79-845e-8697898fca7f",
+            "name": "CREATE NEW",
+            "url": "localhost:5000/api/menu/createNew",
+            "method": "POST",
+            "sortNum": 320000,
+            "created": "2023-04-22T06:20:28.280Z",
+            "modified": "2023-04-22T06:20:28.280Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxODkxODUxLCJleHAiOjE2ODIxNTEwNTF9.J29Ud38mFELBgJLmytvPw9YZOMH2gUas8-4uhdyJQIU"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Menu2\",\n  \"items\":[\n    {\n      \"food_name\":\"cocktails1\",\n      \"description\": \"A\",\n      \"price\": 30000\n    },\n    {\n      \"food_name\":\"cocktails2\",\n      \"description\": \"B\",\n      \"price\": 22000\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "938363cc-603d-4d14-b52a-9fe67b290c7f",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "2f3d8fb2-aa75-4b79-845e-8697898fca7f",
+            "name": "EDIT",
+            "url": "localhost:5000/api/menu/643fa6508c0eaa05f84ce77e",
+            "method": "PUT",
+            "sortNum": 330000,
+            "created": "2023-04-22T06:20:28.281Z",
+            "modified": "2023-04-22T06:20:28.281Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxODkxODUxLCJleHAiOjE2ODIxNTEwNTF9.J29Ud38mFELBgJLmytvPw9YZOMH2gUas8-4uhdyJQIU"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Menu1\",\n  \"items\":[\n    {\n      \"food_name\":\"Spy\",\n      \"description\": \"Should try\",\n      \"price\": 46000\n    },\n    {\n      \"food_name\":\"Vola\",\n      \"description\": \"Sweet, easy to drink\",\n      \"price\": 42000\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "84c44865-9882-4113-936c-0a0ee36ea80b",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "2f3d8fb2-aa75-4b79-845e-8697898fca7f",
+            "name": "REMOVE MENUITEM",
+            "url": "localhost:5000/api/menu/removeMenuItem/643fa6508c0eaa05f84ce77e",
+            "method": "PUT",
+            "sortNum": 340000,
+            "created": "2023-04-22T06:20:28.282Z",
+            "modified": "2023-04-22T06:20:28.282Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiI2NDFiZmI1NDYwODUzOTBkZDkzN2U2NTUiLCJhY2NvdW50Um9sZSI6IkFkbWluIiwiaWF0IjoxNjgxODkxODUxLCJleHAiOjE2ODIxNTEwNTF9.J29Ud38mFELBgJLmytvPw9YZOMH2gUas8-4uhdyJQIU"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"menuItemId\":\n  [\n    \"643fac10f6f8dee080207eb8\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0a80885f-6f93-45d9-9cda-dbf0423e4562",
+            "colId": "f5b0b093-7132-49b2-9638-1217d37dc774",
+            "containerId": "2f3d8fb2-aa75-4b79-845e-8697898fca7f",
+            "name": "GET ALL",
+            "url": "localhost:5000/api/menu/get-all",
+            "method": "GET",
+            "sortNum": 340000,
+            "created": "2023-04-22T06:20:28.283Z",
+            "modified": "2023-04-22T06:20:28.283Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
